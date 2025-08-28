@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>E-commerce Website Design</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body onload = "loadCategoryData()">
+        <div id = "product-form">
+            <div class = "sticky-bar">
+                <div class="logo">
+                    <img src="images/e-com_logo.png", width="140px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="">Category</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <h3 id="h3">Add New Product</h3>
+            <div>
+                <a id="back-product" href="product.html">Back</a>
+                <form id = "productForm">
+                    <label for="picture">Image File Name: [with File Type]</label>
+                    <input type="text" id="picture" name="picture"><br>
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br>
+                    
+                    <label for="description">Short Description:</label>
+                    <input type="text" id="description" name="description" maxlength="20"><br>
+                    
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price" min="0"><br>
+                    
+                    <label for="category_id">Category:</label>
+                    <select id="category_id" name="category_id"><br>
+                    
+                    <!-- Use a submit button for form submission -->
+                    <input type="button" id="submitButton" value="Submit" onclick="addProductData()"><br>
+
+                    <input type="button" onclick="redirectToPage()" value = "Back">
+                </form>
+            </div>
+        </div>
+        <!-- <a id = "back-product" href="product.html"><button type="button">Back</button></body></a> -->
+        
+        <script src="restaurant.js"></script>
+    </body>
+</html>
+
+

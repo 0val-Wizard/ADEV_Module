@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id = "product-form">
+        <div class = "sticky-bar">
+            <div class="logo">
+                <img src="images/e-com_logo.png", width="140px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="">Category</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h3 id="h3">Product Details</h3>
+        <div>
+            <a id="back-product" href="product.html">Back</a>
+            <form id = "editForm">
+                <input type = "text" id = "id" name = "id" hidden>
+
+                <label for="picture">Image File Name: [with File Type]</label>
+                <input type="text" id="picture" name="picture"><br>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+                
+                <label for="description">Short Description:</label>
+                <input type="text" id="description" name="description" maxlength="20"><br>
+                
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" min="0"><br>
+                
+                <label for="category_id">Category:</label>
+                <select id="category_id" name="category_id"><br><br>
+                
+                <input type = "button" onclick = "updateProductData()" value = "Update">
+                <input type="button" onclick="deleteProduct(this)" restId='' id="deleteButton" value="Delete">
+            </form>
+        </div>
+    </div>
+    <script src="restaurant.js"></script>
+    <script>
+        window.onload = function() {
+            loadAddedProductDetail();
+            loadCategoryData();
+        };
+    </script>
+</body>
+</html> 

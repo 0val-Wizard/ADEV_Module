@@ -1,0 +1,15 @@
+{
+  "name": "restuarant_review",
+  "version": "1.0.0",
+  "description": "restaurant review description",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hong Yap",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.3"
+  }
+}
