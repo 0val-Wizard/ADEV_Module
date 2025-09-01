@@ -6,7 +6,15 @@ This module consists of my work;
 2) Database Design
 
 ## Website
-[Find Details]
+I designed and developed an E-commerce website where users can:
+
+- Browse Products: Navigate through home, products, categories, and account pages.
+
+- Add Products: Use a form to upload new items with image, name, description, price, and category.
+
+- Organize by Category: Products can be grouped for easy filtering.
+
+- User-Friendly Navigation: Includes main pages like Home, Products, About, Contact, and Account.
 
 ## Database Design
 
